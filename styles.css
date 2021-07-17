@@ -1,0 +1,58 @@
+body{
+    background-image: url(https://besthqwallpapers.com/Uploads/18-4-2020/129116/thumb2-gary-spongebob-squarepants-4k-2020-movie-the-spongebob-movie-sponge-on-the-run.jpg) ;
+     /*background: linear-gradient(to right, rgb(172, 49, 80) , rgb(230, 223, 135)); */
+    padding: 0;
+    margin: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.calculadora-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+}
+
+.calculadora-grid>button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8XmhYy4wlASCqZMzhP9SlHTWCfM2qQensA&usqp=CAU);
+   /* background-color: rgb(235, 151, 230); */
+
+}
+.calculadora-grid>button:hover{
+    background-color: rgba(red, green, blue, .9);
+}
+
+.tamanho-dois{
+    grid-column: span 2;
+}
+
+.output{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0,0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column; 
+    word-wrap:break-word;
+    word-break: break-all;
+}
+
+.output .operador-anterio{
+    color: grey;
+    font-size: 1.5rem;
+}
+.output .operador-atual{
+    color: white;
+    font-size: 2.5rem;
+}
